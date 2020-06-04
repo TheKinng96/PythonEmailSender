@@ -9,7 +9,7 @@ email['from'] = 'your_name'
 email['to'] = 'target_email_address'
 email['subject'] = 'Hi there This is a Test Mail'
 
-email.set_content(html.substitute({'name': 'hoyi'}), 'html')
+email.set_content(html.substitute({'name': 'random_name'}), 'html')
 
 with smtplib.SMTP(host='smtp.gmail.com', port=587) as smtp:
     smtp.ehlo()
